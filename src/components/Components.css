@@ -1,0 +1,257 @@
+.movie-list-container {
+    width: 100%;
+    min-height: 82vh;
+    background: #3a3838;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.movie-details {
+    background: #302f2f;
+    height: 85%;
+    width: 98%;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.more-info {
+    background: #232324;
+    width: 98%;
+    min-height: 11.5%;
+    border-radius: 5px;
+    margin-bottom: 1px;
+}
+
+.open-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+.open-btn:active {
+    background: rgb(49, 49, 49);
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.content-design {
+    width: auto;
+    height: 75%;
+    border: none;
+    border-right: 1.5px solid #1e1e1e;
+}
+
+.movie-card {
+    background: #272626;
+    padding: 2px;
+    min-height: 20%;
+    width: 28.5%;
+    margin: 8px;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+
+.movie-card:hover .card-img-top {
+    transition: filter 0.6s ease;
+    filter: brightness(25%);
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 40%;
+    transform: translateY(40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    transition: bottom 0.4s ease;
+}
+
+.movie-card:hover .card-img-overlay {
+    bottom: 50%;
+    transform: translateY(50%);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.media-row {
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.media-row:hover {
+    background: #282829 !important;
+}
+
+.dFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dFlexSpaced-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dFlexSpaced-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dFlexCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dFlexColSpaced {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.dFlexWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: wrap;
+}
+
+.dFlex-no-aic {
+    display: flex;
+    justify-content: center;
+}
+
+.fpoppins-0-8 {
+    font: 0.8em Poppins, Calibri;
+}
+.fpoppins-0-9 {
+    font: 0.9em Poppins, Calibri;
+}
+.fpoppins-1 {
+    font: 1em Poppins, Calibri;
+}
+.fpoppins-1-1 {
+    font: 1.1em Poppins, Calibri;
+}
+.fpoppins-1-2 {
+    font: 1.2em Poppins, Calibri;
+}
+.fpoppins-1-3 {
+    font: 1.3em Poppins, Calibri;
+}
+
+.fmont-0-8 {
+    font: 0.8em Montserrat, Calibri;
+}
+.fmont-0-9 {
+    font: 0.9em Montserrat, Calibri;
+}
+.fmont-1 {
+    font: 1em Montserrat, Calibri;
+}
+.fmont-1-1 {
+    font: 1.1em Montserrat, Calibri;
+}
+.fmont-1-2 {
+    font: 1.2em Montserrat, Calibri;
+}
+.fmont-1-3 {
+    font: 1.3em Montserrat, Calibri;
+}
+
+.torange {
+    color: #f78800;
+}
+
+.torange-light {
+    color: #ffa435;
+}
+
+.tgrey {
+    color: #737373;
+}
+
+.t-decoration-none {
+    text-decoration: none !important;
+}
+
+.card-img-show {
+    height: 445px;
+    width: 300px; 
+}
+
+.b-notification, .delete-btn {
+    height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .card-img-show {
+        width: 85% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .movie-card {
+        width: 45%;
+        min-height: 15%;
+        height: auto !important;
+    }
+    .movie-card-show {
+        height: 90% !important;
+        width: 90%;
+    }
+    .card-img-show {
+        height: 80%;
+        width: 60%;
+    }
+    .wishlist-plot {
+        font: 0.95em Montserrat, sans-serif;
+    }
+    .b-notification, .delete-btn {
+        height: 50% !important;
+    }
+    .empty-container {
+        width: 90% !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .card-details-text {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 839px) {
+    .card-details-text {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card-details-text {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-details-text {
+        display: block !important;
+    }
+}
+
